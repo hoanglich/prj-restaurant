@@ -1,0 +1,107 @@
+
+
+.dropDownList_wrapper::after{
+    content:"";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -15px;
+    right: -8px;
+}
+
+.dropDownList-item_img {
+    width: 80px;
+}
+
+.dropDownList-item {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #777;
+}
+
+.dropDownList-item:hover {
+    background-color: #dfd9d9;
+}
+
+.dropDownList_product-header{
+    width: 100%;
+    display: block;
+    position: sticky;
+    padding-left: 10px;
+    top: 0;
+    font-weight: 700;
+    background-color: #ccc;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.dropDownList_product-body{
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+
+.dropDownList-item-info{
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dropDownList-item_title-name{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700 ;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    
+}
+
+.dropDownList-item_title-price{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(251, 81, 77);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dropDownList-item_title-price p{
+    font-weight:initial;
+    color: #777;
+    font-size: 14px;
+    padding-right: 8px;
+}
+
+.dropDownList-item-body{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.dropDown-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dropDownList_product-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(251, 81, 77);
+    position: sticky;
+    bottom: 0;
+    height: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-transform: uppercase;
+}

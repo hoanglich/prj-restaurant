@@ -1,0 +1,19 @@
+
+/* mobile and tablet  */
+@media (max-width: 1180px){
+
+}
+
+/* tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    .grid.wide {
+        width: 750px
+    }   
+}
+
+/* mobile */
+
+@media(max-width: 739px) {
+    
+
+}

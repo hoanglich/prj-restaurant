@@ -1,0 +1,206 @@
+.header-Warpper {
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo-Header-Img {
+    height: 60px;
+}
+
+.header-List {
+    list-style: none;
+}
+
+.header-List-Item{
+    margin: 0 12px;
+}
+
+.header-Link:hover {
+    color: #fbb403;
+}
+
+.navbar-Link,
+.header-Mobile-Category,
+.header-Link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.header-Mobile-Category {
+    display: none;
+    width: 60px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 10px ;
+    border-left: 1px solid #ccc ;
+}
+
+.header-Cart {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header-Cart:hover .dropDownList_wrapper{
+    display: block;
+}
+
+.header-Cart_quantity-product{
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    top: -2px;
+    left: 22px;
+}
+
+.header-User {
+
+}
+
+.header-Login {
+    color: #fff;
+    font-size: 18px;
+}
+.headr-LogIn-Text {
+    margin-left: 20px;
+}
+
+/* navbar */
+
+.navbar {
+    position: fixed;
+    background-color: #2f4f4f;
+    top: 0;
+    height: 100%;
+    left: -100%;
+    bottom: 0;
+    width: 48%;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    z-index: 100;
+}
+
+.navbar.active {
+    left: 0;
+}
+
+.navbar-Logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-List{
+
+}
+.navbar-List-Item {
+    padding: 5px 0px;
+    border-bottom: 1px solid #ccc ;
+}
+
+.navbar-Link:hover {
+    color: #fbb403;
+    animation: trans linear 0.05s;
+}
+
+.btnClose {
+
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* drop Down list */
+.dropDownList_wrapper{
+    z-index: 1;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    right: 9px;
+    top: 33px;
+    box-shadow: 0 1px 6px 5px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    display: none;
+    transform-origin: calc(100% - 70px)  top;
+    animation: HeaderNotiGrow ease-in 0.2s;
+}
+
+@keyframes HeaderNotiGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* responsive */
+
+/* mobile and tablet  */
+@media (max-width: 1180px){
+
+}
+
+/* tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    .grid.wide {
+        width: 750px
+    }   
+}
+
+
+@media(max-width: 739px) {
+    .grid.wide {
+        width: 350px
+    }
+    .header-User {
+        display: none;
+    }
+    .headr-LogIn-Text{
+        margin: 0;
+    }
+    .header-Mobile-Category {
+        display: flex;
+    }
+    .header-List {
+        display: none;
+    }
+}
+
+
+@keyframes trans{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

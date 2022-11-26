@@ -1,0 +1,122 @@
+.blog-Home{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 70px 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.blog-Box {
+    width: 1000px;
+}
+
+.blog-Image-Box{
+    
+}
+
+.blog-image {
+    height: 600px
+}
+
+.blog-Content-1,
+.blog-Content-0{
+    background-color: #fff;
+    position: absolute;
+    width: 600px;
+    height: 380px;
+    padding: 40px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.blog-Content-0:hover{
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.6s);
+    transform: translateX(40px);
+    transition: transform ease-in-out 0.2s;
+}
+
+.blog-Content-1:hover{
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.6s);
+    transform: translateX(-40px);
+    transition: transform ease-in-out 0.2s;
+}
+
+.blog-Content-Title{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #bd8e2e;
+}
+
+.blog-Context{
+    font-size: 13px;
+    color: rgb(163, 147, 147);
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.blog-Content-Body{
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@keyframes transitionBlog{
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+
+
+/*  responesive */
+
+/* mobile and tablet  */
+@media (max-width: 1180px){
+
+}
+
+/* tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    .blog-Box{
+        width: 100%;
+    } 
+    .blog-image{
+        width: 100%;
+        height:inherit;
+    }
+    .blog-Content-1,
+    .blog-Content-0{
+        width: 400px;
+        height: 500px;
+        border-radius: 0px;
+    }
+    .blog-Content-0{
+        top: 17%;
+    }
+    .blog-Content-1{
+        top: 66%;
+    }
+}
+
+/* mobile */
+
+@media(max-width: 739px) {
+    .blog-image{
+        width: 100%;
+        height:inherit;
+    }
+    .blog-Content-1,
+    .blog-Content-0{
+        position: inherit;
+    }
+}

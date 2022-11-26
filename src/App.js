@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router, Routes,Route, } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
+import {getCart} from '../src/redux/reducer/cartSlice'
+import { publicRoutes } from './routers/routers';
 import './App.css';
 
+
 function App() {
+  const dispatch =useDispatch()
+
+  useEffect(()=>{
+    dispatch(getCart())
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+         {
+            Object.values(publicRoutes).map((route, index)=> {
+              const Page = route.component
+              return <Route path={route.path} element={<Page />} key={index} />
+            })
+         }
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

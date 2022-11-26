@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Pangolin', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.dflex {
+    display: flex;
+}
+
+.jtfCenter {
+    justify-content: center;
+}
+.jtfSpBetween {
+    justify-content: space-between;
+}
+.jtfSpAround {
+    justify-content: space-around;
+}
+
+.jtfSpRight{
+    justify-content: right;
+}
+
+.aliCenter {
+    align-items: center;
+}
+
+.aliright{
+    align-items:flex-end;
+}
+
+.padding-70{
+    padding-top: 70px;
+}

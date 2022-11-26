@@ -1,0 +1,131 @@
+.slide-Box {
+    position: relative;
+    height: 610px;
+    width: 100%;
+    
+}
+
+.slide-Image-Box {
+    position: absolute;
+    width: 100%;
+}
+
+.slide-Image {
+    width: 100%;
+    
+}
+
+.slide-Content-Box {
+    position: absolute;
+    width: 60%;
+    top: 300px;
+    left: 10%;
+    right: 10%;
+    z-index: 20;
+
+
+}
+.slide-Content {
+    z-index: 2;
+    width: 60%;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    animation: slideContent ease-in-out 1s;
+}
+
+.slide-Btn {
+    margin-top: 20px;
+    z-index: 2;
+    left: 50px ;
+}
+
+.slide-Text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.slide-Icon {
+    margin-right: 5px;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 1;
+    color: #fff;
+    border: 2px solid #fbb403;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+    background-color: transparent;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    color: #fff;
+    border: 2px solid #fbb403;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+    background-color: rgb(255, 208, 0);
+}
+
+@keyframes slideContent{
+    from{
+        opacity: 0.6;
+        transform:  translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform:  translateX(0);
+    }
+}
+
+/* responsive */
+
+/* mobile and tablet  */
+@media (max-width: 1180px){
+
+}
+
+/* tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    .slide-Content{
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width: 739px) {
+    .slideContent{
+        font-size: 16px;
+    }
+    /* .slideBtn {
+        display: none;
+    } */
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+    .slideBox {
+        height: 292px;
+    }
+    .slideContentBox {
+        top: 170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .slideBtn {
+        margin-right: 20%;
+        margin-top: 0;
+    }
+    .slideIcon{
+        font-size: 16px;
+        margin: 0;
+    }
+    .slideText {
+        display: none;
+    }
+    
+}

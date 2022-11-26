@@ -1,0 +1,139 @@
+.product-Container {
+    background-color: #000;
+}
+
+.product-Slide {  
+    height: 500px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.product-Wrapper {
+    padding-top: 70px;
+    background-color: rgb(245 245 245);
+    z-index: 1;
+}
+
+.product-category {
+    background-color: #fff;
+    height: 500px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.product-Category-Price-Title,
+.product-Category-Food-Title {
+    padding:  10px 10px 10px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-Category-Food {
+
+}
+
+.prd-Category-Price-item,
+.Prd-Category-Food-item {
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.Prd-Category-Food-item.activate {
+    transition: all linear 0.2s ;
+    background-color: #fbb403;
+    color: #fff;
+}
+
+.prd-Category-Price-item:hover
+{
+    color: #fbb403 ;
+}
+
+.prd-Category-Price-item span,
+.Prd-Category-Food-item span{
+    padding-left: 10px;
+}
+
+
+.product-List-Header {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #ededed;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.product-List-header-sreach{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-List-header-sreach input{
+    width: 100%;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+}
+
+.product-header_sort {
+    position: relative;
+    margin-left: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-header_sort:hover .product-header_sort-list{
+    display: block;
+}
+
+.product-header_sort-label{
+    margin-left: 20px;
+}
+
+.product-header_sort-icon{
+    margin-right: 20px;
+}
+
+.product-header_sort-list{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 100%;
+    z-index: 2;
+    display: none;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.product-header_sort-item {
+    padding: 10px 0 10px 20px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+}
+
+.product-header_sort-item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.product-header_sort-item:hover {
+    color: #fff;
+    background-color: #fbb403;
+}
+
+.product-list-body{
+
+}
